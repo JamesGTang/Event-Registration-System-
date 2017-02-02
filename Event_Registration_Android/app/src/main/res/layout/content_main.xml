@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ca.mcgill.ecse321.event_registration_android.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/event_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/participant_textview"
+        android:text="Event"
+        />
+
+    <TextView
+        android:id="@+id/participant_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Participant"
+        android:layout_below="@+id/feedback_textview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/event_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/participant_textview"
+        android:layout_alignRight="@+id/participant_spinner"
+        android:layout_alignEnd="@+id/participant_spinner" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:id="@+id/Register"
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/event_spinner"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/Register"
+        android:background="@android:color/black"
+        android:id="@+id/div1"
+        ></View>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/div1"
+        android:hint="Enter a name"
+        android:id="@+id/participant_field"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/participant_field"
+        android:text="Add Participant"
+        android:id="@+id/addparticipant_button"
+        android:onClick="addParticipant"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/addparticipant_button"
+        android:background="@android:color/black"
+        android:paddingTop="4dp"
+        android:id="@+id/div2"
+        ></View>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/div2"
+        android:hint="Enter an event"
+        android:id="@+id/event_field"/>
+    <TextView
+        android:id="@+id/date_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: "
+        android:layout_below="@+id/event_field"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/date_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: "
+        android:layout_below="@+id/event_field"
+        android:layout_alignParentRight="true"
+        />
+    <TextView
+    android:id="@+id/startTime_textview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Start time: "
+    android:layout_below="@+id/date_textview"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/startTime_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start time: "
+        android:layout_below="@+id/date_picker"
+        android:layout_alignParentRight="true"
+        />
+    <TextView
+        android:id="@+id/endTime_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End time: "
+        android:layout_below="@+id/startTime_textview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/endTime_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="end time: "
+        android:layout_below="@+id/startTime_picker"
+        android:layout_alignParentRight="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/endTime_picker"
+        android:text="Add Event"
+        android:id="@+id/addevent_button"
+        />
+
+    <TextView
+        android:id="@+id/feedback_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear all fields"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Spinner
+        android:id="@+id/participant_spinner"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/feedback_textview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
