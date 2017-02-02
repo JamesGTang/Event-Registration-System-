@@ -1,0 +1,102 @@
+<manager id="1">
+  <registrations id="2">
+    <registrtation id="3">
+      <id>1</id>
+      <participant id="4">
+        <name>Mike</name>
+      </participant>
+      <event id="5">
+        <name>Soccer</name>
+        <eventDate id="6">2017-01-04</eventDate>
+        <startTime id="7">15:02:41</startTime>
+        <endTime id="8">15:30:00</endTime>
+      </event>
+    </registrtation>
+    <registrtation id="9">
+      <id>1</id>
+      <participant id="10">
+        <name>James</name>
+      </participant>
+      <event reference="5"/>
+    </registrtation>
+    <registrtation id="11">
+      <id>1</id>
+      <participant reference="10"/>
+      <event id="12">
+        <name>Movie</name>
+        <eventDate id="13">2017-01-03</eventDate>
+        <startTime id="14">15:25:32</startTime>
+        <endTime id="15">15:55:00</endTime>
+      </event>
+    </registrtation>
+    <registrtation id="16">
+      <id>1</id>
+      <participant reference="4"/>
+      <event id="17">
+        <name>Concert</name>
+        <eventDate id="18">2017-01-11</eventDate>
+        <startTime id="19">15:37:39</startTime>
+        <endTime id="20">15:40:00</endTime>
+      </event>
+    </registrtation>
+    <registrtation id="21">
+      <id>1</id>
+      <participant reference="10"/>
+      <event reference="17"/>
+    </registrtation>
+    <registrtation id="22">
+      <id>2</id>
+      <participant id="23">
+        <name>ja t</name>
+      </participant>
+      <event reference="17"/>
+    </registrtation>
+    <registrtation id="24">
+      <id>1</id>
+      <participant reference="10"/>
+      <event reference="17"/>
+    </registrtation>
+    <registrtation id="25">
+      <id>1</id>
+      <participant reference="4"/>
+      <event reference="12"/>
+    </registrtation>
+  </registrations>
+  <participants id="26">
+    <participant reference="10"/>
+    <participant reference="4"/>
+    <participant id="27">
+      <name>Jason</name>
+    </participant>
+    <participant id="28">
+      <name>0</name>
+    </participant>
+    <participant reference="23"/>
+    <participant id="29">
+      <name>Jack</name>
+    </participant>
+    <participant id="30">
+      <name>Jess</name>
+    </participant>
+    <participant id="31">
+      <name>Jec</name>
+    </participant>
+    <participant id="32">
+      <name>John</name>
+    </participant>
+    <participant id="33">
+      <name>Sam</name>
+    </participant>
+  </participants>
+  <events id="34">
+    <event reference="5"/>
+    <event reference="12"/>
+    <event reference="17"/>
+    <event id="35">
+      <name>Spa</name>
+      <eventDate id="36">2017-01-19</eventDate>
+      <startTime id="37">19:14:23</startTime>
+      <endTime id="38">19:14:23</endTime>
+    </event>
+  </events>
+</manager>
